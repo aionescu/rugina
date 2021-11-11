@@ -1,5 +1,5 @@
 [package]
-name = "rouille"
+name = "rugina" # Unfortuantely Cargo doesn't allow Unicode characters in crate names
 version = "0.1.0"
 edition = "2018"
 

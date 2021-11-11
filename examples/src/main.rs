@@ -1,85 +1,84 @@
-rouille::rouille! {
-    externe cagette rouille;
+rugina::rugină! {
+  externă ladă rugina;
 
-    utilisons std::collections::Dictionnaire comme Dico;
+  folosește bibliotecă::colecții::Dicționar ca Dicț;
 
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine);
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine>;
+  trăsătură CheieValoare {
+    funcție scrie(&sine, cheie: Sfoară, valoare: Sfoară);
+    funcție citește(&sine, cheie: Sfoară) -> Rezultat<Opțiune<&Sfoară>, Sfoară>;
+  }
+
+  static mutabil DICȚIONAR: Opțiune<Dicț<Sfoară, Sfoară>> = Nimic;
+
+  structură Concret;
+
+  implementează CheieValoare pentru Concret {
+    funcție scrie(&sine, cheie: Sfoară, valoare: Sfoară) {
+      fie dicț = nesigur {
+        DICȚIONAR.obține_sau_inserează_cu(Implicit::implicit)
+      };
+
+      dicț.inserează(cheie, valoare);
     }
 
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
+    funcție citește(&sine, cheie: Sfoară) -> Rezultat<Opțiune<&Sfoară>, Sfoară> {
+      dacă fie Ceva(dicț) = nesigur { DICȚIONAR.ca_referință() } {
+        Bun(dicț.obține(&cheie))
+      } altfel {
+        Ero("Verifica dicționarul".înspre())
+      }
+    }
+  }
 
-    structure Concrète;
+  public(ladă) funcție poate(i: u32) -> Opțiune<Rezultat<u32, Sfoară>> {
+    dacă i % 2 == 1 {
+      dacă i == 42 {
+        Ceva(Ero(Sfoară::din("Hopa!")))
+      } altfel {
+        Ceva(Bun(33))
+      }
+    } altfel {
+      Nimic
+    }
+  }
 
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
-            };
-            dico.insérer(clé, valeur);
-        }
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine> {
-            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
-                Bien(dico.lire(&clé))
-            } sinon {
-                Arf("fetchez le dico".vers())
-            }
-        }
+  asincronă funcție exemplu() { }
+
+  asincronă funcție exemplu2() {
+    exemplu().așteaptă;
+  }
+
+  funcție principal() {
+    fie mutabil x = 31;
+
+    potrivește x {
+      42 => {
+        afișează_linie!("Sarmale")
+      }
+      _ => afișează_linie!("Ioi")
     }
 
-    public(cagette) fonction peut_etre(i: u32) -> PeutÊtre<Résultat<u32, Chaine>> {
-        si i % 2 == 1 {
-            si i == 42 {
-                Quelque(Arf(Chaine::depuis("merde")))
-            } sinon {
-                Quelque(Bien(33))
-            }
-        } sinon {
-            Rien
-        }
+    pentru i în 0..10 {
+      fie val = buclă {
+        sparge i;
+      };
+
+      cât timp x < val {
+        x += 1;
+      }
+
+      x = dacă fie Ceva(rezultat) = poate(i) {
+        rezultat.desfă()
+      } altfel {
+        12
+      };
     }
+  }
 
-    asynchrone fonction exemple() {
-    }
-
-    asynchrone fonction exemple2() {
-        exemple().attend;
-    }
-
-    fonction principale() {
-        soit mutable x = 31;
-
-        selon x {
-            42 => {
-                affiche!("omelette du fromage")
-            }
-            _ => affiche!("voila")
-        }
-
-        pour i de 0..10 {
-            soit val = boucle {
-                arrête i;
-            };
-
-            tant que x < val {
-                x += 1;
-            }
-
-            x = si soit Quelque(resultat) = peut_etre(i) {
-                resultat.déballer()
-            } sinon {
-                12
-            };
-        }
-
-        //secondaire();
-    }
-
-    #[légal(code_inaccessible)]
-    fonction secondaire() {
-        merde!("oh non"); // for the true French experience
-        calisse!("tabernacle"); // for friends speaking fr-ca
-        oups!("fetchez la vache"); // in SFW contexts
-    }
+  #[permite(cod_inaccesibil)]
+  funcție secundar() {
+    futu_i!("Futu-i!"); // For the true Romanian experience
+    plm!("Vai de plm"); // If you're in a hurry
+    hopa!("No ni mă la el"); // In SFW contexts
+  }
 }
