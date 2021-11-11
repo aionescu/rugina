@@ -1,5 +1,7 @@
 # rugină
 
+<img src="Assets/Logo.png" alt="Rugină Logo" width="256" height="256"/>
+
 Aren't you _obosit_ from writing Rust programs in English? Do you like saying
 _futu-i_ or _plm_ a lot? Would you like to try something different, in an exotic and
 funny-sounding language? Would you want to bring some Romanian touch to your
