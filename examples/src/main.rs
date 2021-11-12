@@ -25,7 +25,7 @@ rugina::rugină! {
       dacă fie Ceva(dicț) = nesigur { DICȚIONAR.ca_referință() } {
         Bun(dicț.obține(&cheie))
       } altfel {
-        Ero("Verifica dicționarul".înspre())
+        Eșuat("Verifică dicționarul".înspre())
       }
     }
   }
@@ -33,7 +33,7 @@ rugina::rugină! {
   public(ladă) funcție poate(i: u32) -> Opțiune<Rezultat<u32, Sfoară>> {
     dacă i % 2 == 1 {
       dacă i == 42 {
-        Ceva(Ero(Sfoară::din("Hopa!")))
+        Ceva(Eșuat(Sfoară::din("Hopa!")))
       } altfel {
         Ceva(Bun(33))
       }

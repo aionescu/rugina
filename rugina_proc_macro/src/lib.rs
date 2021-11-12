@@ -4,7 +4,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
   let ident_str = ident.to_string();
 
   let new_str = match ident_str.as_str() {
-    "Ero" => "Err",
+    "Eșuat" => "Err",
     "Bun" => "Ok",
     "Sfoară" => "String",
     "Dicționar" => "HashMap",
@@ -33,7 +33,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
     "desfă" => "unwrap",
     "implicit" => "default",
     "ca_referință" => "as_ref",
-    "citire_scriere" => "io",
+    "intrare_ieșire" => "io",
     "externă" => "extern",
     "fals" => "false",
     "funcție" => "fn",
@@ -61,7 +61,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
     "static" => "static",
     "structură" => "struct",
     "dorește" => "expect",
-    "cât" => None?,
+    "cât" => None?, // Used for `cat timp`
     "timp" => "while",
     "folosește" => "use",
     "înspre" => "into",
