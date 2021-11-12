@@ -48,7 +48,7 @@ rugina::rugină! {
       dacă fie Ceva(dicț) = nesigur { DICȚIONAR.ca_referință() } {
         Bun(dicț.obține(&cheie))
       } altfel {
-        Ero("Verifica dicționarul".înspre())
+        Eșuat("Verifica dicționarul".înspre())
       }
     }
   }
