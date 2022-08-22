@@ -89,32 +89,40 @@ Please don't introduce swear words, though: we will not excuse your Romanian.
 
 Here's a non-exhaustive list of implementations for other languages:
 
-* French: [rouille](https://github.com/bnjbvr/rouille)
-* Dutch: [roest](https://github.com/jeroenhd/roest)
-* German: [rost](https://github.com/michidk/rost)
-* Polish: [rdza](https://github.com/phaux/rdza)
-* Italian: [ruggine](https://github.com/DamianX/ruggine)
-* Russian: [ржавчина](https://github.com/FluxIndustries/rzhavchina)
-* Esperanto: [rustteksto](https://github.com/dscottboggs/rustteksto)
-* Hindi: [zung](https://github.com/rishit-khandelwal/zung)
-* Hungarian: [rozsda](https://github.com/jozsefsallai/rozsda)
-* Chinese: [xiu (锈)](https://github.com/lucifer1004/xiu)
-* Spanish: [oxido](https://github.com/fdschonborn/oxido)
-* Korean: [Nok (녹)](https://github.com/Alfex4936/nok)
-* Finnish: [ruoste](https://github.com/vkoskiv/ruoste)
-* Arabic: [sada](https://github.com/LAYGATOR/sada)
-* Turkish: [pas](https://github.com/ekimb/pas)
-* Vietnamese: [gỉ](https://github.com/Huy-Ngo/gir)
-* Japanese: [sabi (錆)](https://github.com/yuk1ty/sabi)
-* Danish: [rust?](https://github.com/LunaTheFoxgirl/rust-dk)
-* Marathi: [gan̄ja](https://github.com/pranavgade20/ganja)
+- Dutch: [roest](https://github.com/jeroenhd/roest)
+- German: [rost](https://github.com/michidk/rost)
+- Polish: [rdza](https://github.com/phaux/rdza)
+- Italian: [ruggine](https://github.com/DamianX/ruggine)
+- Russian: [ржавчина](https://github.com/FluxIndustries/rzhavchina)
+- Esperanto: [rustteksto](https://github.com/dscottboggs/rustteksto)
+- Hindi: [zung](https://github.com/rishit-khandelwal/zung)
+- Hungarian: [rozsda](https://github.com/jozsefsallai/rozsda)
+- Chinese: [xiu (锈)](https://github.com/lucifer1004/xiu)
+- Spanish: [rustico](https://github.com/UltiRequiem/rustico)
+- Korean: [Nok (녹)](https://github.com/Alfex4936/nok)
+- Finnish: [ruoste](https://github.com/vkoskiv/ruoste)
+- Arabic: [sada](https://github.com/LAYGATOR/sada)
+- Turkish: [pas](https://github.com/ekimb/pas)
+- Vietnamese: [gỉ](https://github.com/Huy-Ngo/gir)
+- Japanese: [sabi (錆)](https://github.com/yuk1ty/sabi)
+- Danish: [rust?](https://github.com/LunaTheFoxgirl/rust-dk)
+- Marathi: [gan̄ja](https://github.com/pranavgade20/ganja)
+- Romanian: [rugină](https://github.com/aionescu/rugina)
+- Czech: [rez](https://github.com/radekvit/rez)
+- Ukrainian: [irzha](https://github.com/brokeyourbike/irzha)
+- Bulgarian: [ryzhda](https://github.com/gavadinov/ryzhda)
+- Slovak: [hrdza](https://github.com/TheMessik/hrdza)
+- Catalan: [rovell](https://github.com/gborobio73/rovell)
+- Corsican: [rughjina](https://github.com/aldebaranzbradaradjan/rughjina)
+- Indonesian: [karat](https://github.com/annurdien/karat)
+- Lithuanian: [rūdys](https://github.com/TruncatedDinosour/rudys)
 
-You can find a more comprehensive list on [@bnjbvr](https://github.com/bnjbvr)'s [rouille](https://github.com/bnjbvr/rouille#other-languages) repo.
+You can find a more up-to-date list on [@bnjbvr](https://github.com/bnjbvr)'s [rouille](https://github.com/bnjbvr/rouille#other-languages) repo.
 
 ## _Mulțumiri_
 
-* [@bnjbvr](https://github.com/bnjbvr) for the idea, as well as the base repo
+* Thanks to [@bnjbvr](https://github.com/bnjbvr) for the idea, as well as the base repo.
 
-## Licență
+## _Licență_ (License)
 
 [WTFPL](http://www.wtfpl.net/)
