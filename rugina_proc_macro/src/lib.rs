@@ -26,7 +26,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
     "ca" => "as",
     "constant" => "const",
     "trăsătură" => "trait",
-    "nesigur" => "unsafe",
+    "nesigur" | "prietenii_știu_de_ce" => "unsafe",
     "în" => "in",
     "din" => "from",
     "dinamic" => "dyn",
